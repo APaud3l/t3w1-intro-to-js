@@ -1,4 +1,4 @@
-console.log("Hello World!!")
+console.log("Hello World!!");
 
 // x = 5;
 
@@ -11,3 +11,21 @@ console.log("Hello World!!")
 const x = 5;
 
 console.log(x);
+
+let fruits = [
+    "apple",
+    "banana",
+    "mango"
+];
+
+fruits.forEach(fruit => {
+    console.log(fruit.toLocaleUpperCase());
+});
+
+console.log(fruits);
+
+mapTest = fruits.map((fruit) => {
+    return fruit.toLocaleUpperCase();
+});
+
+console.log(mapTest);
