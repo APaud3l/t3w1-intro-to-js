@@ -4,3 +4,5 @@
 - Objects Review
 - Functions vs Methods
 - Characteristics of Functions
+
+- Review of the topics covered so far
