@@ -1,6 +1,9 @@
 console.log("Start of the Dice Roller!!");
 
-// simple dice roller function
+/**
+ * Example JSDoc Comment - Simple Dice Roller function
+ * @param {number} [diceSize=6] 
+ */
 function rollDice(diceSize = 6) {
     console.log(`Rolling a ${diceSize}-sided die...`);
     let diceSide = Math.ceil(Math.random() * diceSize);
@@ -18,15 +21,21 @@ rollDice(diceSize=10);
 rollDice(20);
 
 
-//  Specific dice roller function that calls the simple function
-// Using Function Expression
+/**
+ * Specific dice roller function that calls the simple function
+ * Using Function Expression
+ */
 const rollDice25 = function () {
     rollDice(25);
 }
 
 rollDice25();
 
-// Using Arrow Function / Unanonymous function
+// 
+/**
+ * Using Arrow Function / Unanonymous function to roll die of size 15
+ * @returns the result of rolling the die
+ */
 const rollDice15 = () => {
     // return rollDice(15);
     // or
@@ -40,11 +49,20 @@ let diceSide15 = rollDice15();
 console.log("The side you rolled in this 15-sided die is: " + diceSide15);
 
 // If we want more functionality, then we use the {}, otherwise we can use the shortened version
+/**
+ * Using the Roll Dice function for 8 sided die
+ * @returns Result of the 8-sided dice-roll
+ */
 const rollDice8 = () => rollDice(8);
 console.log("The side you rolled for the 8-sided die is: " + rollDice8());
 
 
-// Implementing the callback feature/functionality/characteristic of function
+/**
+ * 
+ * @param {*} side 
+ * @param {*} callback 
+ * @returns the callback function that will be passed, ideally the rollDice() function
+ */
 function customDiceRoll(side, callback) {
     return callback(side); // rollDice(30);
 }
